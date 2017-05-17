@@ -55,29 +55,48 @@ body {
 h2{
 	font-size:34px;
 	color:#222222;
-	font-weight:700;
+	font-weight:600;
 	margin:0 0 15px 0;
 	text-align:center;
 	text-transform:uppercase;
 }
 h3{
+	font-size:24px;
 	color:#222222;
-	font-size:16px;
-	margin:0 0 5px 0;
+	font-weight:600;
+	margin:0 0 15px 0;
+	text-align:center;
 	text-transform:uppercase;
-	font-weight:500;
+}
+h4 {
+	text-align: center;
+	font-size: 22px;
 }
 p{
 	line-height:24px;
 	margin:0;
+	font-size: 17px;
+}
+p span {
+	color: black;
+	font-weight: 500;
 }
 
+ul {
+	padding-left: 0;
+}
+
+h2#h2_1 {
+	text-transform: none;
+	font-size: 38px;
+	font-weight: 300;
+}
 /* Header Styles
 ---------------------------------*/
 
 .header{
 	text-align:center;
-	background:url(../img/mountains.jpg) left top no-repeat;
+	background:url(../img/header.jpg) left bottom no-repeat;
 	background-size: 100%;
 	height: 850px;
 	padding:280px 0;
@@ -88,7 +107,7 @@ p{
 }
 .header h1{
 	font-size:50px;
-	font-weight:400;
+	font-weight:300;
 	color: #a4a4a4;
 	width: 400px;
 	padding: 15px 20px;
@@ -167,42 +186,189 @@ p{
 }
 
 .main-section{
-	padding:90px 0 110px;
+	padding:65px 0 0px;
 }
 
+div ul#li-event {
+	text-align: center;
+}
+
+div ul#li-event li,
+div ul#li-event li#mobile,
+div ul#li-event li#desktop {
+	display: block;
+	list-style: none;
+	text-align: center;
+	margin: auto 50px;
+	font-weight: 500;
+	font-size: 16px;
+}
+div ul#li-event li#mobile{
+	display: none;
+}
+div ul#li-event li span {
+	display: block;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+div ul#li-event li:nth-child(3) {
+	margin: 20px;
+	font-size: 14px;
+}
+
+div.etoile p {
+	text-align: center;
+	margin-top: 15px;
+}
 
 /* Portfolio
 ---------------------------------*/
 
 section#portfolio {
-	background-color: #fbfbfb;
+	background-color: #ffffff;
+}
+
+section#portfolio h2 {
+	margin-bottom: 40px;
 }
 
 .Portfolio-box{
 	text-align:center;
-	margin: 0 2px 30px;
-	height:400px;
+	margin: 0 2px 5px;
+	height:350px;
 	width:260px;
 	overflow:hidden;
 	float:left;
 	padding:0;
 }
-.Portfolio-box img{
+
+.box-img-1{
+	background-image: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: 101%;
+}
+
+.box-img-2{
+	background-image: url(../img/2.jpg);
+	background-repeat: no-repeat;
+	background-size: 103%;
+	background-position: -3px 0px;
+}
+
+.box-img-3{
+	background-image: url(../img/3.jpg);
+	background-repeat: no-repeat;
+	background-size: 190%;
+	background-position: -170px -20px;
+}
+
+.box-img-4{
+	background-image: url(../img/4.jpg);
+	background-repeat: no-repeat;
+	background-size: 122%;
+	background-position: -30px;
+}
+
+.box-img-5{
+	background-image: url(../img/5.jpg);
+	background-repeat: no-repeat;
+	background-size: 101%;
+	background-position: -2px 0px;
+}
+
+.box-img-6{
+	background-image: url(../img/6.jpg);
+	background-repeat: no-repeat;
+	background-size: 125%;
+	background-position: -5px -70px;
+}
+
+.box-img-7{
+	background-image: url(../img/7.jpg);
+	background-repeat: no-repeat;
+	background-size: 105%;
+	background-position: 0;
+}
+
+.box-img-8{
+	background-image: url(../img/8.jpg);
+	background-repeat: no-repeat;
+	background-size: 180%;
+	background-position: 0;
+}
+
+.box-img-9{
+	background-image: url(../img/9.jpg);
+	background-repeat: no-repeat;
+	background-size: 197%;
+	background-position: -250px -30px;
+}
+
+.box-img-10{
+	background-image: url(../img/10.jpg);
+	background-repeat: no-repeat;
+	background-size: 115%;
+	background-position: -2px -40px;
+}
+
+.box-img-11{
+	background-image: url(../img/11.jpg);
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+	background-position: 0 -10px;
+}
+
+.box-img-12{
+	background-image: url(../img/12.jpg);
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+	background-position: -10px;
+}
+
+.box-img-13{
+	background-image: url(../img/13.jpg);
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+	background-position: -10px;
+}
+
+.box-img-14{
+	background-image: url(../img/14.jpg);
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+	background-position: -10px;
+}
+
+.box-img-15{
+	background-image: url(../img/15.jpg);
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+	background-position: -10px;
+}
+
+.box-img-16{
+	background-image: url(../img/16.jpg);
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+	background-position: -10px;
+}
+
+/*.Portfolio-box img{
 	margin-bottom:25px;
 	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;	
 }
 
 .Portfolio-box img:hover {
 	opacity: 0.6;
-}
+}*/
 
 .Portfolio-nav li a.current{
 	background:#45759b;
 	color:#fff;
 	text-decoration:none;
 }
+
 img {
    max-width:100%;
 }
@@ -210,7 +376,7 @@ img {
 /* Contact
 ---------------------------------*/
 .main-section.contact{
-	padding:90px 0 100px;
+	padding:65px 0 100px;
 }
 
 .main-section.contact{
@@ -279,8 +445,6 @@ img {
 	font-weight:600;
 	border:0px;
 	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
 }
 
 .input-btn:hover{
@@ -307,7 +471,7 @@ img {
 	text-align:center;
 }
 .copyright a{
-	color:#45759b;
+	color:#cccccc;
 	font-weight:600;
 	text-decoration: none;
 	transition:all 0.3s ease-in-out;
@@ -398,17 +562,32 @@ img {
 	.main-section.contact{ background-size:contain;}
 	.Portfolio-nav li a{ padding:5px 16px;}
 	.Portfolio-nav li{ display:block;}
-	
-	
+	.header h1{
+	font-size:50px;
+	font-weight:400;
+	color: #a4a4a4;
+	width: 200px;
+	padding: 15px 20px;
+	background-color: #FFFFFF;
+	letter-spacing: -1px;
+	margin:60px auto 22px;
+}
+.input-btn{width: 100%; margin-bottom: 30px;}
 }
 
 @media only screen and (max-width: 479px) {
 	/****Mobile Portrait 320 ****/
+	div ul#li-event li:nth-child(2){margin: 20px 0 0}
+	.main-nav-outer{display: none;}
 	.contact-info-box{ margin-left:0px;}
 	.header{ padding:40px;}
 	.form{ margin:0}
-	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+	.Portfolio-box{  max-width:404px !important; width: 100% !important; margin:0 auto 8px;}
 	.Portfolio-box img { max-width:100%;}
 	.portfolioContainer{ width:280px !important; margin:0 auto !important } 
-	
+	.main-section{padding: 30px 0;}
+	.main-section.contact{padding:30px 0 60px;}
+	.main-section.contact div.row {margin-top: 30px;}
+	div ul#li-event li#desktop{display: none;}
+	div ul#li-event li#mobile{display: block;}
 }
